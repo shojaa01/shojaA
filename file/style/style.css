@@ -128,9 +128,10 @@ body{
 
     overflow:hidden;
 
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    box-shadow:0 10px 20px rgba(0, 0, 0, 0.281);
 
 }
+
 
 .item{
 
@@ -236,7 +237,6 @@ body{
 
     margin-top:25px;
 
-    background:white;
 
     border-radius:18px;
 
@@ -245,8 +245,6 @@ body{
     line-height:35px;
 
     color:#555;
-
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
 
 }
 
@@ -260,13 +258,11 @@ body{
 
     margin-bottom:30px;
 
-    background:white;
 
     border-radius:18px;
 
     padding:20px;
 
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
 
 }
 
@@ -326,16 +322,7 @@ hr{
 
 }
 
-.price:hover,
-.description:hover,
-.address:hover,
-.info:hover{
 
-    transform:translateY(-3px);
-
-    transition:.3s;
-
-}
 
 /*==========================
       انیمیشن
