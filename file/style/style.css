@@ -422,3 +422,11 @@ hr{
 }
 
 }
+
+.search {
+  padding: 8px 12px;
+  width: 220px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 500px;
+}
