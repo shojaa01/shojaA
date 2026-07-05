@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Vazirmatn',sans-serif;
+}
+
+body{
+
+    background:#edf2f7;
+    direction:rtl;
+
+}
+
+.container{
+
+    width:95%;
+    max-width:700px;
+    margin:30px auto;
+
+}
+
+/*==========================
+        اسلایدر
+==========================*/
+
+.slider{
+
+    width:100%;
+
+}
+
+.slider-box{
+
+    width:100%;
+    height:300px;
+
+    background:#d7dde5;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.slide{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    position:absolute;
+
+    opacity:0;
+
+    transition:.5s;
+
+}
+
+.slide.active{
+
+    opacity:1;
+
+}
+
+/*==========================
+        دات ها
+==========================*/
+
+.dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:18px;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#b4bcc6;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.dot.active{
+
+    width:28px;
+
+    border-radius:20px;
+
+    background:#1d3557;
+
+}
+
+/*==========================
+      اطلاعات
+==========================*/
+
+.info{
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+}
+
+.item h3{
+
+    font-size:17px;
+
+    color:#555;
+
+    font-weight:500;
+
+}
+
+.item span{
+
+    font-size:18px;
+
+    color:#1d3557;
+
+    font-weight:bold;
+
+}
+
+.line{
+
+    width:100%;
+
+    height:1px;
+
+    background:#ececec;
+
+}
+
+/*==========================
+        قیمت
+==========================*/
+
+.price{
+
+    margin-top:25px;
+
+    background:#1d3557;
+
+    color:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.row:not(:last-child){
+
+    margin-bottom:18px;
+
+}
+
+.row h3{
+
+    font-size:17px;
+
+    font-weight:500;
+
+}
+
+.row span{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#ffd166;
+
+}
+
+/*==========================
+      توضیحات
+==========================*/
+
+.description{
+
+    margin-top:25px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    line-height:35px;
+
+    color:#555;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+/*==========================
+        آدرس
+==========================*/
+
+.address{
+
+    margin-top:25px;
+
+    margin-bottom:30px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.address h3{
+
+    color:#1d3557;
+
+    margin-bottom:15px;
+
+}
+
+.address p{
+
+    line-height:34px;
+
+    color:#555;
+
+}
+
+/*==========================
+      خط جداکننده
+==========================*/
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#d8dee7;
+
+    margin:25px 0;
+
+}
+
+/*==========================
+      Hover
+==========================*/
+
+.item:hover{
+
+    background:#f7f9fc;
+
+}
+
+.dot:hover{
+
+    transform:scale(1.3);
+
+}
+
+.slider-box:hover{
+
+    transform:translateY(-2px);
+
+    transition:.3s;
+
+}
+
+.price:hover,
+.description:hover,
+.address:hover,
+.info:hover{
+
+    transform:translateY(-3px);
+
+    transition:.3s;
+
+}
+
+/*==========================
+      انیمیشن
+==========================*/
+
+.container{
+
+    animation:show .8s;
+
+}
+
+@keyframes show{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================
+      موبایل
+==========================*/
+
+@media(max-width:600px){
+
+.slider-box{
+
+    height:240px;
+
+}
+
+.item{
+
+    padding:16px;
+
+}
+
+.item h3{
+
+    font-size:15px;
+
+}
+
+.item span{
+
+    font-size:16px;
+
+}
+
+.row h3{
+
+    font-size:15px;
+
+}
+
+.row span{
+
+    font-size:17px;
+
+}
+
+.description{
+
+    line-height:30px;
+
+}
+
+.address{
+
+    line-height:30px;
+
+}
+
+}
